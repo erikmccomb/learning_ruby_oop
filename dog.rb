@@ -18,4 +18,3 @@ class Dog
 end
 
 dog_1 = Dog.new
-binding.pry
