@@ -12,7 +12,14 @@ class Person
   
   #Instance Method  
   def initialize(hair_color, eye_color, gender, shoesize, name, age, height)
-    @hair_color = hair_color
+    # the below code is an example of how to get user input if the variables are not passed in.
+    if name == ''
+      puts 'What is the dogs name?'
+      @name = gets.strip
+    else
+      @name = name
+    end
+    # END EXAMPLE - the below assume the passed in values
     @eye_color = eye_color
     @gender = gender
     @shoesize = shoesize
